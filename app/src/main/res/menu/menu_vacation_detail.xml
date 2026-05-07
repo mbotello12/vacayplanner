@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Add Start Alert"
+        android:id='@+id/startAlert'/>
+    <item android:title="Add End Alert"
+        android:id='@+id/endAlert'/>
+    <item android:title="Share"
+        android:id='@+id/share'/>
+</menu>

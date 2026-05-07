@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.ExcursionDetailActivity">
+<!--   4. Included the Excursion Details, Title and Date-->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="31dp"
+        android:background="#673AB7"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/saveExcursionButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:text="Excurstion Title: "
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"></TextView>
+
+        <EditText
+            android:id="@+id/excursionText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:hint="&quot;Snorkeling, Hiking, Bus tour&quot;"
+            android:textColorHint="#898787"
+            android:inputType="text"
+            android:textSize="20sp"></EditText>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:padding="3dp"
+            android:text="Excursion Date: "
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/ExcursionDate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:hint="&quot;MM/DD/YYYY&quot;"
+            android:textColorHint="#898787"
+            android:textSize="20sp"></EditText>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveExcursionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginBottom="162dp"
+        android:text="Save Excursion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/deleteExcursion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="174dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="179dp"
+        android:layout_marginBottom="133dp"
+        android:clickable="true"
+        android:text="Delete Excursion"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveExcursionButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
